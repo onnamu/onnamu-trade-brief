@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ONNAMU Indonesia–Korea Trade Briefing | 2026-11-25</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1916;
+      --muted: #5a564c;
+      --faint: #8a8578;
+      --line: #e4ddd0;
+      --line-strong: #d0c8b8;
+      --paper: #fffdf8;
+      --bg: #efe8db;
+      --teal: #155e56;
+      --teal-dark: #0c3d38;
+      --teal-soft: #e7f2f0;
+      --gold: #8a6430;
+      --gold-soft: #f4ead8;
+      --alert: #8b3d2a;
+      --alert-soft: #f8ebe6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 9.6px;
+      line-height: 1.42;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      max-width: 100%;
+      margin: 12px auto;
+      background: var(--paper);
+      padding: 7.5mm 9mm 6.5mm;
+      box-shadow: 0 10px 40px rgba(26, 25, 22, 0.12);
+      position: relative;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    .sheet::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--teal-dark) 0 38%, var(--gold) 38% 52%, #b42318 52% 70%, #003478 70% 100%);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 14px;
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid var(--teal-dark);
+      margin-bottom: 6px;
+    }
+    .brand-kicker {
+      font-size: 8px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--teal-dark);
+      line-height: 1.18;
+    }
+    .subtitle {
+      margin-top: 1px;
+      font-size: 9.5px;
+      color: var(--muted);
+    }
+    .meta {
+      text-align: right;
+      flex: 0 0 auto;
+      font-size: 9px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .meta strong {
+      display: block;
+      color: var(--teal-dark);
+      font-size: 10.5px;
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid #e2d0ab;
+      font-size: 7.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0 6px;
+      border-radius: 99px;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--teal-dark);
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 0 0 4px;
+    }
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 13px;
+      height: 13px;
+      border-radius: 3px;
+      background: var(--teal);
+      color: #fff;
+      font-size: 7.5px;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    h3 { font-size: 9.4px; font-weight: 600; color: var(--teal); margin: 0 0 2px; }
+    .note, .tiny { font-size: 8px; color: var(--muted); line-height: 1.4; }
+    .est {
+      font-size: 7.2px;
+      font-weight: 600;
+      color: var(--gold);
+      background: var(--gold-soft);
+      border-radius: 3px;
+      padding: 0 4px;
+      margin-left: 3px;
+      vertical-align: middle;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 7px 12px; }
+    .grid-21 { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 7px 12px; }
+    .grid-plat { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 6px 10px; }
+    .block { margin-bottom: 6px; }
+
+    .people { width: 100%; border-collapse: collapse; font-size: 8.6px; }
+    .people th, .people td {
+      text-align: left; vertical-align: top;
+      padding: 2.5px 0; border-bottom: 1px solid var(--line);
+    }
+    .people tr:last-child td { border-bottom: 0; }
+    .people th {
+      width: 7.4em; color: var(--teal-dark); font-weight: 600;
+      padding-right: 7px; white-space: nowrap;
+    }
+
+    table.data { width: 100%; border-collapse: collapse; font-size: 8.3px; }
+    table.data th, table.data td {
+      border: 1px solid var(--line-strong);
+      padding: 2.5px 5px;
+      text-align: left;
+      vertical-align: top;
+    }
+    table.data th {
+      background: var(--teal);
+      color: #fff;
+      font-weight: 600;
+    }
+    table.data tr:nth-child(even) td { background: #f7f4ee; }
+    table.data .price { font-weight: 600; color: var(--teal-dark); } table.data .price { line-height: 1.35; }
+    table.data .cap { white-space: nowrap; text-align: center; }
+    table.roles { font-size: 8.1px; }
+    table.roles td:first-child { font-weight: 600; color: var(--teal-dark); white-space: nowrap; }
+
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+    .card {
+      border: 1px solid var(--line-strong);
+      border-radius: 4px;
+      padding: 5px 6px 4px;
+      background: #fcfaf6;
+    }
+    .card.alert { background: var(--alert-soft); border-color: #e4c4b8; }
+    .card h3 { font-size: 9px; margin-bottom: 2px; }
+    .card.alert h3 { color: var(--alert); }
+    .card ul { margin: 0; padding-left: 1.05em; }
+    .card li { margin: 0; font-size: 8px; }
+    .opp { margin-top: 2px; font-size: 8px; color: var(--teal-dark); font-weight: 500; }
+
+    .platform {
+      border: 1px solid var(--line-strong);
+      background: var(--teal-soft);
+      border-radius: 4px;
+      padding: 5px 7px;
+      font-size: 8.5px;
+    }
+    .lead {
+      border: 1px dashed var(--line-strong);
+      border-radius: 4px;
+      padding: 5px 7px;
+      font-size: 8px;
+      color: var(--muted);
+    }
+    .lead strong { color: var(--ink); font-weight: 600; }
+
+    .gantt-wrap {
+      border: 1px solid var(--line-strong);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .gantt {
+      display: grid;
+      grid-template-columns: 7.2em repeat(9, 1fr);
+      width: 100%;
+      font-size: 7.2px;
+    }
+    .gantt .hd, .gantt .lab, .gantt .empty, .gantt .fill {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+    }
+    .gantt .hd {
+      background: var(--teal-dark);
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      padding: 2.5px 1px;
+    }
+    .gantt .hd:first-child { text-align: left; padding-left: 6px; }
+    .gantt .lab {
+      background: #f3efe6;
+      font-weight: 600;
+      color: var(--teal-dark);
+      padding: 2px 5px;
+      display: flex;
+      align-items: center;
+      line-height: 1.2;
+    }
+    .gantt .empty, .gantt .fill {
+      min-height: 16px;
+      background: #fff;
+    }
+    .gantt .fill {
+      display: flex;
+      align-items: center;
+      padding: 2px 3px;
+    }
+    .gantt .meet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1px 2px;
+    }
+    .span2 { grid-column: span 2; }
+    .span3 { grid-column: span 3; }
+    .span4 { grid-column: span 4; }
+    .span5 { grid-column: span 5; }
+    .bar {
+      width: 100%;
+      height: 12px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 7px;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 3px;
+    }
+    .bar.t { background: var(--teal); }
+    .bar.i { background: #3d7a73; }
+    .bar.b { background: #2f5f8a; }
+    .bar.p {
+      background: var(--gold-soft);
+      border: 1.3px dashed var(--gold);
+      color: var(--gold);
+      height: 13px;
+    }
+    .bar.e { background: #8a6430; }
+    .bar.c { background: #5c4a32; }
+    .bar.s { background: var(--teal-dark); }
+    .pin {
+      background: #b42318;
+      color: #fff;
+      font-weight: 700;
+      font-size: 7px;
+      border-radius: 3px;
+      padding: 2px 5px;
+      white-space: nowrap;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 10px;
+      margin-top: 3px;
+      font-size: 7.4px;
+      color: var(--muted);
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 4px; }
+    .sw { width: 9px; height: 7px; border-radius: 2px; display: inline-block; }
+    .sw.dash { border: 1.2px dashed var(--gold); background: var(--gold-soft); }
+
+    .risks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 12px;
+      font-size: 8.2px;
+    }
+    .risks li {
+      margin: 0 0 2px;
+      list-style: none;
+      position: relative;
+      padding-left: 0.9em;
+    }
+    .risks li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .risks .k { font-weight: 600; color: var(--teal-dark); }
+
+    footer {
+      margin-top: 5px;
+      padding-top: 4px;
+      border-top: 1px solid var(--line-strong);
+      font-size: 7.3px;
+      color: var(--faint);
+      line-height: 1.4;
+    }
+    footer strong { color: var(--muted); font-weight: 600; }
+
+    @media screen and (max-width: 820px) {
+      body { font-size: 13px; }
+      .sheet {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 18px 16px 24px;
+        box-shadow: none;
+      }
+      h1 { font-size: 22px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .meta { text-align: left; }
+      .grid-2, .grid-21, .grid-plat, .cards, .risks { grid-template-columns: 1fr; }
+      .gantt { display: none; }
+      .gantt-mobile { display: block !important; }
+    }
+    .gantt-mobile { display: none; }
+    .gantt-mobile ol { padding-left: 1.2em; }
+    .gantt-mobile li { margin-bottom: 6px; font-size: 12px; }
+    .gantt-mobile .when { font-weight: 700; color: var(--teal-dark); }
+
+    @media print {
+      html, body { background: #fff; font-size: 9.2px; }
+      .sheet {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+      .sheet::before { height: 3px; }
+      @page { size: A4 portrait; margin: 6.5mm 7.5mm 6mm; }
+      a { color: inherit; text-decoration: none; }
+    }
+
+    .lang-toggle {
+      position: absolute;
+      top: 8px;
+      right: 9mm;
+      z-index: 2;
+    }
+    .lang-toggle a {
+      display: inline-block;
+      color: var(--teal);
+      text-decoration: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 99px;
+      padding: 0 7px;
+      font-size: 7.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      background: var(--paper);
+    }
+    .lang-toggle a:hover { background: var(--teal-soft); }
+    @media print { .lang-toggle { display: none; } }
+    /* English runs longer than Korean; slightly tighter type and spacing keep one A4 sheet. */
+    html, body { line-height: 1.20; }
+    .block { margin-bottom: 3px; }
+    h2 { margin-bottom: 2px; }
+    .sheet { padding: 5.5mm 9mm 4.5mm; }
+    footer { margin-top: 3px; padding-top: 2px; }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <header>
+      <div class="brand">
+        <div class="brand-kicker">ONNAMU · Indonesia ↔ Korea Trade</div>
+        <h1>ONNAMU Indonesia–Korea Trade Briefing</h1>
+        <p class="subtitle">Phase 1: Indonesia → Korea introduction and brokerage, then two-way expansion from H2 2027</p>
+      </div>
+      <div class="meta">
+        <div class="lang-toggle"><a href="index.html">한국어</a></div>
+        <span class="badge">Internal briefing · 1 page</span>
+        <strong>As of 25 November 2026</strong>
+        Prepared by ONNAMU · Time zone: Asia/Seoul
+      </div>
+    </header>
+
+    <div class="grid-2 block">
+      <section>
+        <h2><span class="num">1</span>Overview and structure</h2>
+        <p>On 8 December 2026<span class="est">tentative</span>, CEO Seokmin Lee will meet a vice minister or top-level advisor of <strong>Kemendes PDT</strong> (Kementerian Desa dan Pembangunan Daerah Tertinggal; <strong>Ministry of Village and Development of Disadvantaged Regions</strong>). He is expected to receive export-candidate product lists from about 500 of some 1,100 TEKAD villages and take the first step toward becoming that ministry’s <strong>official agent</strong>.</p>
+        <p style="margin-top:3px;">Phase 1 of the November 2026 proposal is <strong>Indonesia → Korea</strong> brokerage: official agent appointment (LOA) in about 4–6 weeks; sharing verified sourcing information with KOTRA and KITA; a March–May 2027 trade expo (working title <em>2027 Korea-Indonesia Trade Expo: Indonesian Export Sourcing Fair</em>, at COEX or KINTEX, or JCC in Jakarta if held locally); then contract, logistics and customs support, plus commission settlement.</p>
+        <p style="margin-top:3px;"><strong>Phase 2 (from H2 2027)</strong> would broker Korean technology, machinery and equipment, and K-consumer goods into Indonesian procurement and distribution once expo and ministry trust is in place. Company, ministry, and participating-firm counts are still blank; the brokerage entity must be aligned with the models below.</p>
+      </section>
+      <section>
+        <h2><span class="num">2</span>Key people and roles</h2>
+        <table class="people">
+          <tr><th>Seokmin Lee</th><td>CEO of ONNAMU (Seokmin LEE). Pursuing official-agent appointment (Step 1) at the village ministry. Roles document: no direct brokerage experience, expertise, or plans; securing buyers is the key.</td></tr>
+          <tr><th>KIIP</th><td>Korea–Indonesia trade cooperation axis. By model, KIIP or a KIIP-affiliated entity brokers, or runs a “window” with Seokmin Lee.</td></tr>
+          <tr><th>Woobae Kim</th><td>Head of the <strong>first Korean importer to be introduced</strong>; an <strong>ONNAMU partner</strong>.</td></tr>
+          <tr><th>Inhee Oh</th><td>(groot) <strong>Facilitator</strong> for the trade-platform system. May also, if desired, join direct import or brokerage as a registered business operator.</td></tr>
+          <tr><th>Adinda Afi</th><td>(Api) Indonesia coordinator. Speaks Korean.</td></tr>
+        </table>
+        <p class="tiny" style="margin-top:3px;">Per the roles document, his importer acquaintances are one seafood specialist and one general-industrial-goods specialist, each with 17+ years’ experience. The document does not specify their relationship to Woobae Kim.</p>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2><span class="num">3</span>Four possible roles for Seokmin Lee and KIIP</h2>
+      <table class="data roles">
+        <thead>
+          <tr>
+            <th style="width:13%">Model</th>
+            <th style="width:28%">Trade structure</th>
+            <th style="width:34%">Role of KIIP / Seokmin Lee</th>
+            <th>Who brokers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>① Introducer / Bridge</td>
+            <td>1 Indonesian company ↔ 1 Korean company</td>
+            <td>Introduces the parties and bridges them (not a broker)</td>
+            <td>No one (the two companies trade directly)</td>
+          </tr>
+          <tr>
+            <td>② Separate Broker</td>
+            <td>Indonesian company → broker → Korean company</td>
+            <td>Does not broker directly (no experience, expertise, or plans)</td>
+            <td>A KIIP-affiliated company or entity</td>
+          </tr>
+          <tr>
+            <td>③ Hired Expert</td>
+            <td>Multiple Indonesian ↔ multiple Korean companies</td>
+            <td>Hires a trade brokerage expert and runs a brokerage business</td>
+            <td>KIIP / Lee (through the hired expert)</td>
+          </tr>
+          <tr>
+            <td>④ Gov.-linked Window</td>
+            <td>Indonesian ministry and producers ↔ Korean govt / public agencies and buyers</td>
+            <td>Sets up and operates a “window” (needs sustained effort)</td>
+            <td>KIIP-affiliated company or entity, with Lee</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="grid-21 block">
+      <section>
+        <h2><span class="num">4</span>Export-candidate products and prices</h2>
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Specifications</th>
+              <th>Price</th>
+              <th>Weekly</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Queen pineapple</td>
+              <td>Brix 14–18. 10 kg box (9–10 pcs)</td>
+              <td class="price">Rp 19,000/kg<br />FOB Tanjung Perak, Surabaya</td>
+              <td class="cap">20 tons</td>
+            </tr>
+            <tr>
+              <td>Arabica G1 green coffee</td>
+              <td>Unroasted green beans, Grade 1</td>
+              <td class="price">Rp 180,000/kg<br />FOB Tanjung Perak, Surabaya</td>
+              <td class="cap">Inquire</td>
+            </tr>
+            <tr>
+              <td>Robusta G1 green coffee</td>
+              <td>Unroasted green beans, Grade 1</td>
+              <td class="price">Rp 92,000/kg<br />FOB Tanjung Perak, Surabaya</td>
+              <td class="cap">Inquire</td>
+            </tr>
+            <tr>
+              <td>Ungraded Robusta green coffee</td>
+              <td>Unroasted green beans, no grade</td>
+              <td class="price">Rp 84,000/kg<br />FOB Tanjung Perak, Surabaya</td>
+              <td class="cap">Inquire</td>
+            </tr>
+            <tr>
+              <td>Frozen fish bait</td>
+              <td>Frozen. From Pati, Central Java</td>
+              <td class="price">Rp 55,000–82,500/kg<br />Shipping excluded</td>
+              <td class="cap">Inquire</td>
+            </tr>
+            <tr>
+              <td>Frozen squid</td>
+              <td>Block-frozen</td>
+              <td class="price">Rp 31,000–33,000/kg<br /><span style="font-weight:400;color:var(--muted)">Delivery terms not stated</span></td>
+              <td class="cap">Inquire</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:2px;">Source: product report. Prices change continually and may change without prior notice. They must be reconfirmed at the time of order.</p>
+      </section>
+      <section>
+        <h2><span class="num">5</span>Market research highlights</h2>
+        <div class="cards">
+          <div class="card alert">
+            <h3>Chicken feet — imports into Korea not currently possible</h3>
+            <ul>
+              <li>Indonesian poultry cannot currently be imported into Korea. Indonesia is not on the Animal and Plant Quarantine Agency (QIA) approved-country list.</li>
+              <li>Korea HS 0207.14-2090 basic tariff 27%. Mainly Brazilian and Thai origin.</li>
+              <li>Korean wholesale approx. KRW 6,600–6,900/kg. Brazilian origin approx. KRW 3,200/kg (2026-08-21). Local Indonesian prices approx. KRW 1,180–2,360/kg.</li>
+            </ul>
+            <p class="opp">Opportunity: reverse export of halal Korean-style spicy chicken feet to Indonesia.</p>
+          </div>
+          <div class="card">
+            <h3>Coffee — green beans and halal ingredients</h3>
+            <ul>
+              <li>29,101 coffee franchise outlets in Korea (end of 2024).</li>
+              <li>Korea’s 2025 coffee imports rose 35% in value to USD 1.86 billion; volume was roughly unchanged.</li>
+              <li>Indonesia’s coffee market: about USD 6.7 billion (2024), projected to reach USD 12.6 billion by 2030.</li>
+              <li>Green coffee production: 12.37 million bags (2025/26, USDA). Halal mandatory for medium and large foodservice since October 2024.</li>
+            </ul>
+            <p class="opp">Opportunity: supply Indonesian green coffee and halal ingredients to Korea.</p>
+          </div>
+        </div>
+        <p class="note" style="margin-top:2px;">Team market research (2026-11-25). Tariff rates and the approved-country list require expert confirmation with QIA and the Korea Customs Service (KCS).</p>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2><span class="num">6</span>Platform plan and reference link</h2>
+      <div class="grid-plat">
+        <div class="platform">
+          ONNAMU will complete a <strong>platform</strong> covering products from about 500 TEKAD villages, among others, <strong>ready for actual use within 2–4 months of kickoff</strong>. It will play an <strong>important role</strong>. Estimated completion, with a December 2026 kickoff: <strong>February–April 2027</strong>.<span class="est">estimated</span> Inhee Oh (groot) will help set up the system.
+        </div>
+        <div class="lead">
+          <strong>Reference link · metadwipa.id/seafood/</strong>
+          (ONNAMU WhatsApp, 2026-11-25 18:19 Asia/Seoul, shared by rayyan (IT))
+          Upon review, this is not an Indonesian seafood catalog. The page is <strong>FOES: Flavor Odyssey East Sea</strong> (동해 미식 오디세이), a digital culinary space presenting East Sea food culture in 2D cinematic video, multilingual AI narration, and storytelling. It lists no products, specifications, prices, or suppliers. Cita Lintas and ONNAMU logos appear at the bottom.
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">7</span>Schedule</h2>
+      <div class="gantt-wrap">
+        <div class="gantt" aria-label="Trade program schedule Gantt chart">
+          <div class="hd">Item</div>
+          <div class="hd">2026.11</div>
+          <div class="hd">Dec</div>
+          <div class="hd">2027.1</div>
+          <div class="hd">Feb</div>
+          <div class="hd">Mar</div>
+          <div class="hd">Apr</div>
+          <div class="hd">May</div>
+          <div class="hd">Jun</div>
+          <div class="hd">H2</div>
+
+          <div class="lab">Appointment</div>
+          <div class="fill span2"><span class="bar t">Target 4–6 wks · LOA</span></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Info sharing</div>
+          <div class="fill span4"><span class="bar i">KOTRA·KITA · sourcing info</span></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Meeting</div>
+          <div class="empty"></div>
+          <div class="empty meet"><span class="pin">12.08 tentative</span></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Buyers</div>
+          <div class="empty"></div><div class="empty"></div>
+          <div class="fill span5"><span class="bar b">Expo buyer outreach · pre-matching</span></div>
+          <div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Platform</div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="fill span3"><span class="bar p">2–4 mo. after start · est. Feb–Apr</span></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Trade expo</div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="fill span3"><span class="bar e">Mar–May · COEX/KINTEX or JCC</span></div>
+          <div class="empty"></div><div class="empty"></div>
+
+          <div class="lab">Contracts</div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="fill span4"><span class="bar c">Contracts · logistics/customs · fees</span></div>
+          <div class="empty"></div>
+
+          <div class="lab">Phase 2</div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+          <div class="fill"><span class="bar s">KR → ID</span></div>
+        </div>
+      </div>
+      <div class="gantt-mobile">
+        <ol>
+          <li><span class="when">Nov–Dec 2026</span> — Official agent appointment (target 4–6 weeks); start of information sharing with KOTRA and KITA</li>
+          <li><span class="when">8 December 2026 (tentative)</span> — Meeting with a vice minister or top-level advisor of the village ministry. Receipt of the export-candidate list from about 500 villages; Step 1 toward official agent status</li>
+          <li><span class="when">Jan–Feb 2027</span> — Continued information sharing; Korean buyer outreach and pre-matching</li>
+          <li><span class="when">Feb–Apr 2027 (estimated)</span> — Target for platform completion and actual use (2–4 months after kickoff)</li>
+          <li><span class="when">Mar–May 2027</span> — Trade expo (COEX/KINTEX or JCC, Jakarta); buyer matching and on-site contracts</li>
+          <li><span class="when">Mar–Jun 2027</span> — Import contract brokerage, logistics and customs support, commission settlement (including June)</li>
+          <li><span class="when">H2 2027 onward</span> — Phase 2: expand brokerage of Korea → Indonesia exports</li>
+        </ol>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:#155e56"></i>Appointment</span>
+        <span><i class="sw" style="background:#3d7a73"></i>Info sharing</span>
+        <span><i class="sw" style="background:#b42318"></i>Meeting (tentative)</span>
+        <span><i class="sw" style="background:#2f5f8a"></i>Buyer outreach</span>
+        <span><i class="sw dash"></i>Platform (estimated)</span>
+        <span><i class="sw" style="background:#8a6430"></i>Expo</span>
+        <span><i class="sw" style="background:#5c4a32"></i>Contracts / fees</span>
+        <span><i class="sw" style="background:#0c3d38"></i>Phase 2</span>
+        <span>Bars follow the proposal roadmap and the user’s schedule. Platform completion in Feb–Apr assumes a kickoff around December.</span>
+      </div>
+    </section>
+
+    <section class="block" style="margin-bottom:0;">
+      <h2><span class="num">8</span>Key risks and next steps</h2>
+      <div class="risks">
+        <ul>
+          <li><span class="k">Securing buyers is the key.</span> The roles document states that lining up genuine Korean end-buyer demand in advance is difficult under any model. There are now two importer acquaintances (seafood; general industrial goods) plus Woobae Kim, the first importer to be introduced (ONNAMU partner). The window must be broadened to government or public-agency level to invite multiple buyers with real purchasing power.</li>
+          <li><span class="k">Chicken feet (poultry) blocked by quarantine.</span> Indonesia is not QIA-approved, so these cannot currently enter Korea. A separately researched item, not one of the four candidate products. The opportunity is Korea → Indonesia halal spicy chicken feet.</li>
+        </ul>
+        <ul>
+          <li><span class="k">Reconfirm prices and delivery terms.</span> Prices of the four candidate products fluctuate. Frozen squid: delivery terms not stated. Fish bait: shipping excluded.</li>
+          <li><span class="k">The brokerage entity needs to be aligned.</span> The proposal has “our company” earning commissions as official agent; in models ② and ④ a KIIP affiliate brokers and Seokmin Lee does not. Align the entity before the 8 December meeting (company, ministry, and firm counts are still blank).</li>
+          <li><span class="k">Next steps:</span> Confirm meeting time and place; draft LOA items; after the ~500-product list arrives, set the platform kickoff date; reconfirm the four products’ prices and squid delivery terms; decide the brokerage entity (ONNAMU / a KIIP affiliate / a separate legal entity).</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <strong>Items requiring confirmation.</strong>
+      Do not rely on this document alone for tariff, quarantine, or food-requirement decisions; expert confirmation is required. Sources: Animal and Plant Quarantine Agency (QIA), Korea Customs Service (KCS). Market-research figures (chicken-feet tariff and wholesale prices, coffee import value, etc.) are from the team’s 2026-11-25 research; official rates and the approved-country list must be rechecked with those agencies. For internal briefing only. Based solely on the product report, business proposal, role-model document, 2026-11-25 user instructions, team market research, and the metadwipa page review. No passwords, PINs, account numbers, or personal phone numbers or email addresses are included.
+    </footer>
+  </article>
+</body>
+</html>

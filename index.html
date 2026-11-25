@@ -374,6 +374,27 @@
       @page { size: A4 portrait; margin: 6.5mm 7.5mm 6mm; }
       a { color: inherit; text-decoration: none; }
     }
+
+    .lang-toggle {
+      position: absolute;
+      top: 8px;
+      right: 9mm;
+      z-index: 2;
+    }
+    .lang-toggle a {
+      display: inline-block;
+      color: var(--teal);
+      text-decoration: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 99px;
+      padding: 0 7px;
+      font-size: 7.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      background: var(--paper);
+    }
+    .lang-toggle a:hover { background: var(--teal-soft); }
+    @media print { .lang-toggle { display: none; } }
   </style>
 </head>
 <body>
@@ -385,6 +406,7 @@
         <p class="subtitle">1단계 인도네시아 → 한국 도입·중개, 이어서 2027년 하반기 양방향 확대 구상</p>
       </div>
       <div class="meta">
+        <div class="lang-toggle"><a href="en.html">English</a></div>
         <span class="badge">내부 브리핑 · 1장</span>
         <strong>기준일 2026년 11월 25일</strong>
         작성: 온나무 · 시간대 Asia/Seoul
@@ -579,7 +601,7 @@
           <div class="lab">바이어 모집</div>
           <div class="empty"></div><div class="empty"></div>
           <div class="fill span5"><span class="bar b">엑스포 바이어 모집 · 프리매칭</span></div>
-          <div class="empty"></div>
+          <div class="empty"></div><div class="empty"></div>
 
           <div class="lab">플랫폼 완료</div>
           <div class="empty"></div><div class="empty"></div><div class="empty"></div>
